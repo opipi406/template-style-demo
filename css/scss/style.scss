@@ -11,13 +11,16 @@ html {
   margin: auto;
 }
 
-p {
-  margin: 24px 0;
-}
-
 .container {
   margin: 0 60px;
-  padding: 40px 0;
+  padding: 40px 12px;
+  @include mq-down(lg) {
+    margin: 0 30px;
+  }
+  @include mq-down(sm) {
+    margin: 0;
+  }
+
 }
 
 .panel {
@@ -25,6 +28,13 @@ p {
 
   margin-bottom: 48px;
   padding: 24px;
+
+  @include mq-down(md) {
+    padding: 24px 16px;
+  }
+  @include mq-down(xs) {
+    padding: 24px 8px;
+  }
 
   border-radius: 24px;
   background-color: bg-palette(main, dark);
@@ -80,6 +90,10 @@ p {
   }
 }
 
+.text {
+  margin: 24px 0;
+}
+
 // Text Style Loop
 @each $var in "main", "primary", "secondary", "success", "info", "warn", "error" {
   .text-#{$var} {
@@ -97,3 +111,4 @@ p {
 @import "footer";
 @import "burger-menu";
 @import "global-nav";
+@import "card";

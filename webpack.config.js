@@ -9,6 +9,6 @@ module.exports = {
   },
 
   externals: {
-    jquery: 'jQuery'  // jQueryをバンドル対象から外す
+    jquery: 'jQuery'  // jQueryをバンドル対象から外す (WordPress用)
   },
 }

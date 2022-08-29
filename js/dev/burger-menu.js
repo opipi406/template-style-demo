@@ -1,7 +1,7 @@
 jQuery(function ($) {
 
   // ハンバーガーボタンのクリックイベント
-  $("body").on("click", ".burger-menu__btn, .burger-overlay, .menu__item", function () {
+  $("body").on("click", ".burger-menu__btn, .burger-overlay, .burger-menu__nav .menu__item", function () {
     const selectors = [
       // "body",
       ".burger-menu",
